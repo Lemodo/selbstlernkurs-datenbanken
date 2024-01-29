@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module Overview</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Module Overview</h2>
+
+    <div class="row">
+      <!-- Modellierung Section -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 module-card">
+          <div class="maximize-button" onclick="toggleMaximize(this)">
+            <img src="icons/aspect_ratio.svg" alt="Maximize Icon">
+          </div>
+          <div class="progress-bar" style="width: 50%;"></div>
+          <div class="card-body d-flex flex-column align-items-center">
+            <h3 class="card-title mb-3">Modellierung</h3>
+            <ul class="list-unstyled">
+              <li><a href="module1.html">ER-Diagramme</a></li>
+              <li><a href="module2.html">Beziehungstypen</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Implementierung Section -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 module-card">
+          <div class="maximize-button" onclick="toggleMaximize(this)">
+            <img src="icons/aspect_ratio.svg" alt="Maximize Icon">
+          </div>
+          <div class="progress-bar" style="width: 33%;"></div>
+          <div class="card-body d-flex flex-column align-items-center">
+            <h3 class="card-title mb-3">Implementierung</h3>
+            <ul class="list-unstyled">
+              <li><a href="module3.html">Anomalien</a></li>
+              <li><a href="module4.html">Normalisierung</a></li>
+              <li><a href="module5.html">Relationsschema</a></li>
+              <li><a href="module6.html">Primär- und Fremdschlüssel</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anwendung Section -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 module-card">
+          <div class="maximize-button" onclick="toggleMaximize(this)">
+            <img src="icons/aspect_ratio.svg" alt="Maximize Icon">
+          </div>
+          <div class="progress-bar" style="width: 10%;"></div>
+          <div class="card-body d-flex flex-column align-items-center">
+            <h3 class="card-title mb-3">Anwendung</h3>
+            <ul class="list-unstyled">
+              <li><a href="module7.html">ZA-Klassen</a></li>
+              <li><a href="module8.html">SQL</a></li>
+              <li><a href="module9.html">Verknüpfung von Tabellen</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col text-center">
+        <a href="./index.html" class="btn btn-secondary">Back</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap JS and Popper.js (if needed) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Include custom JavaScript for card maximization with animation -->
+  <script>
+    function toggleMaximize(button) {
+      const card = button.closest('.module-card');
+      card.classList.toggle('maximized');
+    }
+  </script>
+</body>
+</html>
