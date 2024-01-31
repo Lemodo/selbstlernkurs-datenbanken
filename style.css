@@ -1,81 +1,59 @@
 /* style.css */
 
 body {
-    background-color: #f2f2f2; /* Light gray background color */
-  }
-  
-  .container {
-    max-width: 800px;
-  }
-  
-  h2 {
-    color: #333; /* Dark gray for section headings */
-  }
-  
-  .module-card {
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 10px;
-    overflow: hidden;
-    transition: box-shadow 0.3s ease-in-out;
-    position: relative; /* Add relative positioning for absolute child positioning */
-  }
-  
-  .module-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .module-card.maximized {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    z-index: 1000;
-    border: none; /* Remove border when maximized */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow when maximized */
-    background-color: #fff; /* White background when maximized */
-  }
-  
-  .maximize-button {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    cursor: pointer;
-  }
-  
-  .card-body {
-    text-align: center;
-    padding: 20px; /* Add padding to the card body */
-  }
-  
-  .card-title {
-    color: #333;
-  }
-  
-  .progress-bar {
-    height: 8px;
-    transition: width 0.3s ease-in-out;
-    background: linear-gradient(to right, #3498db, #2ecc71); /* Blue to green gradient */
-  }
-  
-  ul {
-    padding: 0;
-    list-style: none;
-  }
-  
-  ul li {
-    margin-bottom: 12px; /* Increased spacing between list items */
-  }
-  
-  .btn-secondary {
-    background-color: #3498db; /* Blue button */
-    color: #fff;
-  }
-  
-  .btn-secondary:hover {
-    background-color: #2980b9; /* Slightly darker blue on hover */
-  }
-  
-  /* ... (other existing styles) */
-  
+  background-color: #f2f2f2; /* Light gray background color */
+}
+
+.container {
+  max-width: 800px;
+}
+
+h2 {
+  color: #333; /* Dark gray for section headings */
+}
+
+.module-card {
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative; /* Add relative positioning for absolute child positioning */
+}
+
+.module-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  text-align: center;
+  padding: 20px; /* Add padding to the card body */
+}
+
+.card-title {
+  color: #333;
+}
+
+.progress-bar {
+  height: 8px;
+  transition: width 0.3s ease-in-out;
+  background: linear-gradient(to right, #3498db, #2ecc71); /* Blue to green gradient */
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 12px; /* Increased spacing between list items */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  margin-top: 10px; /* Adjust margin for spacing */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Slightly darker blue on hover */
+}

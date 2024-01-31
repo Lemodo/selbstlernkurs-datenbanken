@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module Overview</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Modul Übersicht</h2>
+
+    <div class="card mb-4 module-card">
+      <div class="progress-bar" id="progress1"></div>
+      <div class="card-body d-flex flex-column align-items-center">
+        <h3 class="card-title mb-3">Modul 1: Modellierung</h3>
+        <p class="mb-2"><a href="#" onclick="showModuleDetails(1)">Mehr Informationen</a></p>
+        <button class="btn btn-primary" onclick="startModule(1)">Modul starten</button>
+      </div>
+    </div>
+
+    <div class="card mb-4 module-card">
+      <div class="progress-bar" id="progress2"></div>
+      <div class="card-body d-flex flex-column align-items-center">
+        <h3 class="card-title mb-3">Modul 2: Grundlagen</h3>
+        <p class="mb-2"><a href="#" onclick="showModuleDetails(2)">Mehr Informationen</a></p>
+        <button class="btn btn-primary" onclick="startModule(2)">Modul starten</button>
+      </div>
+    </div>
+
+    <div class="card mb-4 module-card">
+      <div class="progress-bar" id="progress3"></div>
+      <div class="card-body d-flex flex-column align-items-center">
+        <h3 class="card-title mb-3">Modul 3: Modellierung mit ER-Diagrammen</h3>
+        <p class="mb-2"><a href="#" onclick="showModuleDetails(3)">Mehr Informationen</a></p>
+        <button class="btn btn-primary" onclick="startModule(3)">Modul starten</button>
+      </div>
+    </div>
+
+    <div class="card mb-4 module-card">
+      <div class="progress-bar" id="progress4"></div>
+      <div class="card-body d-flex flex-column align-items-center">
+        <h3 class="card-title mb-3">Modul 4: Relationsschema und Schlüssel</h3>
+        <p class="mb-2"><a href="#" onclick="showModuleDetails(4)">Mehr Informationen</a></p>
+        <button class="btn btn-primary" onclick="startModule(4)">Modul starten</button>
+      </div>
+    </div>
+
+    <div class="card mb-4 module-card">
+      <div class="progress-bar" id="progress5"></div>
+      <div class="card-body d-flex flex-column align-items-center">
+        <h3 class="card-title mb-3">Modul 5: Abfragesprache SQL</h3>
+        <p class="mb-2"><a href="#" onclick="showModuleDetails(5)">Mehr Informationen</a></p>
+        <button class="btn btn-primary" onclick="startModule(5)">Modul starten</button>
+      </div>
+    </div>
+
+    <div class="card mb-4 module-card">
+      <div class="progress-bar" id="progress6"></div>
+      <div class="card-body d-flex flex-column align-items-center">
+        <h3 class="card-title mb-3">Modul 6: Datenschutz</h3>
+        <p class="mb-2"><a href="#" onclick="showModuleDetails(6)">Mehr Informationen</a></p>
+        <button class="btn btn-primary" onclick="startModule(6)">Modul starten</button>
+      </div>
+    </div>
+
+    <div class="card mb-4 module-card">
+      <div class="progress-bar" id="progress7"></div>
+      <div class="card-body d-flex flex-column align-items-center">
+        <h3 class="card-title mb-3">Modul 7: Anwendung</h3>
+        <p class="mb-2"><a href="#" onclick="showModuleDetails(7)">Mehr Informationen</a></p>
+        <button class="btn btn-primary" onclick="startModule(7)">Modul starten</button>
+      </div>
+    </div>
+
+    <div class="card mb-4 module-card">
+      <div class="progress-bar" id="progress8"></div>
+      <div class="card-body d-flex flex-column align-items-center">
+        <h3 class="card-title mb-3">Modul 8: Zusammenfassung und Wiederholung</h3>
+        <p class="mb-2"><a href="#" onclick="showModuleDetails(8)">Mehr Informationen</a></p>
+        <button class="btn btn-primary" onclick="startModule(8)">Modul starten</button>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col text-center">
+        <a href="../index.html" class="btn btn-secondary">Back</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap JS and Popper.js (if needed) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Include custom JavaScript for module details and start actions -->
+  <script>
+    function showModuleDetails(moduleNumber) {
+      // Hier könnten die Details für jedes Modul dynamisch geladen werden
+      alert(`Mehr Informationen für Modul (${moduleNumber})`);
+    }
+  </script>
+  <script src="progress.js"></script>
+</body>
+</html>
