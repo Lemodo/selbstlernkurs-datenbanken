@@ -1,6 +1,15 @@
+// progress.js
+
 function startModule(moduleNumber) {
-    window.location.href = moduleNumber;
+  // Hier kannst du den Fortschritt für das gestartete Modul aktualisieren
+  const progressBar = document.getElementById(`progress${moduleNumber}`);
+  if (progressBar) {
+    const currentWidth = parseInt(progressBar.style.width) || 0;
+    const newWidth = Math.min(currentWidth + 10, 100); // Maximal 100%
+    progressBar.style.width = `${newWidth}%`;
   }
+}
+
 
  
 // Simuliere den Fortschritt für jedes Modul
