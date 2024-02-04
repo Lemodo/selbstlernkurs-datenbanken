@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modul 2: Datenmodellierung mit ER-Diagrammen</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Modul 2: Datenmodellierung mit ER-Diagrammen</h2>
+
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="card module-card">
+          <div class="card-body">
+
+            <h4>Anwenden</h4>
+            <hr>
+
+            <p>
+                All dies kann sehr kompliziert wirken. Doch wenn wir alles in einem Beispiel erblicken, scheint es doch alles ziemlich selbsterklärend zu sein. 
+            </p>
+            <img src="images/beispiel er.jpg" class="img-fluid" alt="Beispiel Fluggesellschaft ER-Diagramm">
+            <p>
+                <div class="row">
+                    <div class="col">
+                        <p>Entitäten:</p>
+                        <li><b>Passagier:</b> Name, Adresse, Telefonnummer</li>
+                        <li><b>Angestellte:</b> Personalnummer, Gehalt, Adresse</li>
+                        <li><b>Flugzeug:</b> Seriennummer, Modellnr., Hersteller</li>
+                        <li><b>Flug:</b> Flugnummer, Abflugort, Ankunftsort, Abflugzeit, Ankunftszeit</li>
+                        <li><b>Flugzeugtyp:</b> Typ, Hersteller</li>
+                    </div>
+                    <div class="col">
+                        <p>Attribute:</p>
+                        <li><b>Passagier:</b> Preis, gebucht für <code>Flug</code></li>
+                        <li><b>Angestellte:</b> Pilot, Flugstunden</li>
+                        <li><b>Flugzeug:</b> eingesetzt für <code>Flug</code></li>
+                        <li><b>Flug:</b> Datum, Abflug, kann fliegen <code>Flugzeugtyp</code></li>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p>Kardinalitäten:</p>
+                        <li><b>Passagier bucht Flug (1:N):</b> 1 Passagier kann mehrere Flüge buchen, 1 Flug kann von mehreren Passagieren gebucht werden.</li>
+                        <li><b>Angestellter ist Pilot von Flug (1:N):</b> 1 Pilot kann mehrere Flüge fliegen, 1 Flug kann von mehreren Piloten geflogen werden.</li>
+                        <li><b>Flugzeug ist eingesetzt für Flug (1:N):</b> 1 Flugzeug kann für mehrere Flüge eingesetzt werden.</li>
+                        <li><b>Flug kann Flugzeugtyp fliegen (N:M):</b> 1 Flug kann mehrere Flugzeugtypen fliegen, 1 Flugzeugtyp kann von mehreren Flügen geflogen werden.</li>
+                    </div>
+                </div>
+                <hr>
+                Vielleicht fällt es dir auf, dass manche <b>Attribute</b> <u>unterstrichen</u> sind. Was es damit auf sich hat lernst du im nächsten <a href="../3">Modul 3: Relationsschema und Schlüssel</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row m-4">
+      <div class="col text-center">
+        <a href="4.html" class="btn btn-primary">Zurück</a>
+        <a href="../3" class="btn btn-primary">Nächstes Modul</a>
+        <a href="../index.html" class="btn btn-secondary">Zurück zur Übersicht</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap JS and Popper.js (if needed) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

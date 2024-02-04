@@ -27,9 +27,8 @@
       </div>
     </div>
 
-    <div class="row mt-3">
+    <div class="row m-4">
       <div class="col text-center">
-        <!-- Weiter-Button mit JavaScript-Funktion zum Aktualisieren der Progress Bar -->
         <a href="3.html" class="btn btn-primary">Zurück</a>
 		<a href="../4" class="btn btn-primary">Nächstes Modul</a>
 		<a href="../index.html" class="btn btn-secondary">Zurück zur Übersicht</a>
@@ -42,16 +41,5 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- JavaScript für die Fortschrittsaktualisierung -->
-  <script>
-    function nextModule() {
-      // Hier kannst du die Fortschritte speichern oder an einen Server senden
-      // In diesem Beispiel wird einfach die Progress Bar in der Übersicht um 10% erhöht
-      const progressBar = document.querySelector('.progress-bar');
-      const currentWidth = parseInt(progressBar.style.width) || 0;
-      const newWidth = Math.min(currentWidth + 10, 100); // Maximal 100%
-      progressBar.style.width = `${newWidth}%`;
-    }
-  </script>
 </body>
 </html>
