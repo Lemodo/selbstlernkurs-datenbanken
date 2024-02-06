@@ -9,6 +9,7 @@
   <!-- Link to external CSS file -->
   <link rel="stylesheet" href="style.css">
   <!-- Include Highlight.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/default.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css">
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
@@ -22,21 +23,26 @@
         <div class="card module-card">
           <div class="card-body">
 
-            <h4>Bedingungen und Operatoren mit "DISTINCT":</h4>
+            <h4>JOIN-Operationen - Verknüpfung von Tabellen:</h4>
             <hr>
             <p>
-              Das Schlüsselwort "DISTINCT" wird in SQL verwendet, um eindeutige Werte in einer Spalte anzuzeigen und Duplikate zu entfernen. Es kann als Filterkriterium in Bedingungen verwendet werden.
+              JOIN-Operationen ermöglichen die Verknüpfung von Daten aus verschiedenen Tabellen basierend auf gemeinsamen Spalten.
             </p>
 
-            <p>Beispiel:</p>
+            <p>Hier sind einige gängige JOIN-Typen:</p>
+            <ul>
+              <li><strong>INNER JOIN:</strong> Gibt nur die übereinstimmenden Datensätze zurück.</li>
+              <li><strong>LEFT JOIN (oder LEFT OUTER JOIN):</strong> Gibt alle Datensätze aus der linken Tabelle und die übereinstimmenden Datensätze aus der rechten Tabelle zurück.</li>
+              <li><strong>RIGHT JOIN (oder RIGHT OUTER JOIN):</strong> Gibt alle Datensätze aus der rechten Tabelle und die übereinstimmenden Datensätze aus der linken Tabelle zurück.</li>
+              <li><strong>FULL JOIN (oder FULL OUTER JOIN):</strong> Gibt alle Datensätze zurück, wenn es eine Übereinstimmung in einer der Tabellen gibt.</li>
+            </ul>
+
+            <p>Beispiel INNER JOIN:</p>
             <pre><code class="sql">
-              SELECT Spalte
-              FROM Tabelle
-              WHERE Bedingung AND DISTINCT Spalte;
+              SELECT Tabelle1.Spalte1, Tabelle2.Spalte2
+              FROM Tabelle1
+              INNER JOIN Tabelle2 ON Tabelle1.GemeinsameSpalte = Tabelle2.GemeinsameSpalte;
             </code></pre>
-            
-            <p>Dies gibt alle eindeutigen Werte in der angegebenen Spalte zurück, die die angegebene Bedingung erfüllen.</p>
-            
           </div>
         </div>
       </div>
@@ -44,8 +50,8 @@
 
     <div class="row m-4">
       <div class="col text-center">
-        <a href="2.html" class="btn btn-primary">Zurück</a>
-        <a href="4.html" class="btn btn-primary">Weiter</a>
+        <a href="4.html" class="btn btn-primary">Zurück</a>
+        <a href="../6" class="btn btn-primary">Nächstes Modul</a>
         <a href="../index.html" class="btn btn-secondary">Zurück zur Übersicht</a>
       </div>
     </div>
