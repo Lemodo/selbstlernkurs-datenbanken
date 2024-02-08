@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modul 3: Relationsschema und Schlüssel</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Modul 3: Relationsschema und Schlüssel</h2>
+
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="card module-card">
+          <div class="card-body">
+            
+		
+		<h4>Was sind Schlüssel?</h4>
+			
+		<p>
+			Um Beziehungen von Entitäten in Relationsschemata darzustellen und diese später anzuwenden, benötigt man Schlüssel.
+			<br>
+			Diese werden benötigt um auf andere Tabellen bzw. Objekte der Datenbank zu referenzieren.
+			<br>
+			Häufig werden individuelle IDs in diesem Kontext verwendet, es können aber auch andere Eigenschaften als Schlüssel verwendet werden.
+			<br>
+			<br>
+			Hier ein Beispiel einer n:1 Beziehung, die von einem ERD in ein Relationsschema übertragen wird.
+		 </p>
+
+		<div class="image-container">
+				<img src="images/beziehungstyp_1n.png" alt="Beschreibung des Bildes" class="img-fluid">
+		 </div>
+
+		<p>
+			Dabei sind in diesem Beispiel KNR und SNR die Schlüssel.
+			<br>
+			Um diese in Darstellungen, also ERDs und Relationsschemata, unterstrichen um sie als Schlüssel klar zu differenzieren.
+			<br>
+			Warum jetzt hier der Schlüssel KNR 2-mal erscheint und einmal anstatt durch einen Unterstrich, durch einen Pfeil gekennzeichnet ist, wird nun erklärt.
+		</p>
+		  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row m-4">
+      <div class="col text-center">
+        <a href="1.html" class="btn btn-primary">Zurück</a>
+		<a href="3.html" class="btn btn-primary">Weiter</a>
+		<a href="../index.html" class="btn btn-secondary">Zurück zur Übersicht</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap JS and Popper.js (if needed) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
