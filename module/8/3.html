@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modul 8: Zusammenfassung und Wiederholung</title>
+        <!-- Include Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Link to external CSS file -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Modul 8: Zusammenfassung und Wiederholung</h2>
+
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="card module-card">
+                        <div class="card-body">
+
+                            <h4>Anwendung</h4>
+                            <hr>
+
+                            <div class="alert alert-dark" role="alert">
+                                Bei der Anwendung werden wir uns drei Unterbereiche anschauen. Diese sind: Die Abfrage mit SQL,
+                                Die Nutzung mit Java (mit ZA-Klassen) und Datenschutz.
+                            </div>
+                            <p>
+                                Jeder SQL-Befehl beginnt mit einem SELECT-Befehl, bei dem festgelegt wird, welche Spalten aus (FROM) der/den 
+                                vorliegenden Tabellen übernommen werden sollen. Diese werden mit Bedingungen verwendet, um nach Zeilen mit 
+                                bestimmten Werten zu suchen. <br> Beispielsweise: <br>
+                                <code> SELECT Spalte1, Spalte2 FROM Tabelle WHERE Feld1 = Wert </code> <br>
+                                Die Bedingungen verwenden die folgenden Operatoren: <code>=, !=, >, <, <=, >= </code><br>
+                                Logische Operatoren sind: <code>AND, OR, NOT</code><br>
+                                Um zu überprüfen, ob ein Feld leer ist, kann <code>IS NULL</code> verwendet werden, nicht aber <code>= NULL </code> 
+                                <br> Mithilfe von <code> DISTINCT </code> kann nach Werten gefiltert werden, die nur einmal auftreten.
+                                Mit dem Befehlen <code>COUNT, SUM, AVG, MIN, MAX</code> können die Anzahl, Summe, der Durchschnitt, das Minimum 
+                                und Maximum der Zeilen gesucht werden. <br>
+                                Verschiedene <code>JOIN</code> Befehle werden verwendet, um Tabellen zu verknüpfen, die in der mit <code>ON</code>
+                                angegebenen Bedingung übereinstimmen. <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-4">
+                <div class="col text-center">
+                    <a href="index.html" class="btn btn-primary">Zurück</a>
+                    <a href="3.html" class="btn btn-primary">Weiter</a>
+                    <a href="../index.html" class="btn btn-secondary">Zurück zur Übersicht</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Include Bootstrap JS and Popper.js (if needed) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
