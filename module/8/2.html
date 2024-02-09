@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modul 8: Zusammenfassung und Wiederholung</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Modul 8: Zusammenfassung und Wiederholung</h2>
+
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="card module-card">
+          <div class="card-body">
+
+              <h4>Implementation</h4>
+            <hr>
+
+            <div class="alert alert-dark" role="alert">
+                Bei der Implementation einer Datenbank liegt der Fokus darauf, die Modellierung in Form eines ERDs 
+                in verwendbare Tabellen umzuwandeln und so zu konzipieren, dass Anomalien und Redundanzen vermieden werden.
+                Hierzu wird zunächst ein Relationsschema erstellt.
+            </div>
+            
+            <p>
+                Zur Erstellung eines Relationsschemas werden zunächst Entitäten eines ERDs in einzelne Tabellen umgewandelt.
+                Jedes Attribut der Entität wird zu einer eigenen Spalte in der Tabelle.
+            </p>
+			<img src="../3/images/entitaetstyp.png" alt="Umwandlung ERD zu Relationsschema" class="img-fluid">
+            <p>
+                Um Relationen im Relationsschema darzustellen, gibt es 3 verschiedene Möglichkeiten, die jeweils von
+                der Kardinalität der Beziehung abhängen. Im Falle einer 1:1 Beziehung wird in beiden Tabellen ein 
+                Fremdschlüssel als Verweis auf den Primärschlüssel der jeweils anderen Tabelle verwendet. <br>
+                Hinweis: Primärschlüssel werden zur Kennzeichnung unterstrichen, während Fremdschlüssel um einen Pfeil nach
+                oben ergänzt werden.
+            </p>
+			<img src="images/kardinalitaet_im_rs" alt="Verschiedene Beziehungstypen im Relationsschema" class="img-fluid">
+
+            <p>
+                Um nun Anomalien und Redundanzen zu vermeiden, normalisieren wir die Tabelle. Die drei Bedingungen der 
+                Normalformen lauten:
+            </p>
+
+            <ul>
+                <li>Alle Attribute sind atomar.</li>
+                <li>
+                    Befindet sich in der 1. Normalform und jedes Nicht-Schlüsselattribut ist vom gesamten Primärschlüssel voll funktional abhängig.
+                </li>
+                <li>
+                    Befindet sich in der 2. Normalform und kein Nicht-Schlüsselattribut hängt von einem anderen Nicht-Schlüsselattribut ab.
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row m-4">
+      <div class="col text-center">
+        <a href="index.html" class="btn btn-primary">Zurück</a>
+        <a href="2.html" class="btn btn-primary">Weiter</a>
+        <a href="../index.html" class="btn btn-secondary">Zurück zur Übersicht</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap JS and Popper.js (if needed) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
