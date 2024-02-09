@@ -1,84 +1,94 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modul 4: Normalisierungen</title>
-  <!-- Include Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container mt-5">
-    <h2 class="text-center mb-4">Modul 4: Normalisierungen</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modul 4: Normalisierungen</title>
+        <!-- Include Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Link to external CSS file -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Modul 4: Normalisierungen</h2>
 
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
-        <div class="card module-card">
-          <div class="card-body">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="card module-card">
+                        <div class="card-body">
 
-            <h4>Die Drei Normalformen</h4>
-            <hr>
+                            <h4>Die Drei Normalformen</h4>
+                            <hr>
 
-            <p>
-                Die drei Normalformen bauen aufeinander auf. Das bedeutet, dass jede Tabelle, die nach der 2. Normalform normalisiert 
-                ist, auch nach der 1. normalisiert ist. Auch Tabellen in der 3. Normalform sind nach der 2. und folglich auch 
-                nach der 1. Normalform normalisiert. <br>
-                Hier eine Beispieltabelle, die wir nach allen drei Normalformen normalisieren werden.
-            </p>
-            <img src="images/Norm0.png" alt="Nicht-normalisierte Tabelle">
+                            <p>
+                            Die drei Normalformen bauen aufeinander auf. Das bedeutet, dass jede Tabelle, die nach der 2. Normalform normalisiert 
+                            ist, auch nach der 1. normalisiert ist. Auch Tabellen in der 3. Normalform sind nach der 2. und folglich auch 
+                            nach der 1. Normalform normalisiert. <br>
+                            Hier eine Beispieltabelle, die wir nach allen drei Normalformen normalisieren werden.
+                            </p>
 
-            <h4>Die 1. Normalform</h4>
-            
-            <p> 
-                Die Bedingung der 1. Normalform lautet: "Alle Attribute sind atomar". <br>
-                Atomar bedeutet, dass die Attribute nur einfache Attributwerte beinhalten. Also müssen beispielsweise Namen und 
-                Adressen so weit wie möglich aufgespalten werden. Tun wir dies in der Beispieltabelle, so müssen wir beispielsweise
-                Künstler und Album und die Titel voneinander trennen, da diese zusammengesetzte Attribute sind.
-                Daraufhin entsteht folgende Tabelle:
-            </p>
-            <img src="images/Norm1.png" alt="Tabelle in der 1. Normalform">
+                            <div class="image-container">
+                                <img src="images/Norm0.png" alt="Nicht-normalisierte Tabelle">
+                            </div>
 
-            <h4>Die 2. Normalform</h4>
-            
-            <p> 
-                Die Bedingung der 2. Normalform lautet: "Befindet sich in der 1. Normalform und jedes Nicht-Schlüssel Attribut ist 
-                vom Primärschlüssel voll funktional abhängig." <br>
-                Haben wir einen Primärschlüssel, der aus mehreren Attributen besteht, wie hier aus der Album_ID und Titelnummer, muss
-                die Tabelle gespalten werden, da bspw. der Künstler nicht von der Titelnummer, folglich nicht vom gesamten 
-                Primärschlüssel abhängig ist.
-                Machen wir entsprechende Änderungen, erhalten wir folgende Tabellen:
-            </p>
-            <img src="Norm2" alt="Tabelle in der 2. Normalform">
+                            <h4>Die 1. Normalform</h4>
 
-            <h4>Die 3. Normalform</h4>
-            
-            <p> 
-                Die Bedingung der 3. Normalform lautet: "Befindet sich in der 2. Normalform und kein 
-                Nicht-Schlüsselattribut hängt von einem anderen Nicht-Schlüsselattribut ab." <br>               
-                In unserer Tabelle haben wir z.B. jedoch keine Abhängigkeit zwischen dem Gründungsjahr eines Künstlers und der Album_ID.
-                Ebenfalls ist der Künstler unabhängig von der Album_ID.
-                Machen wir entsprechende Änderungen, erhalten wir folgende Tabellen:
-            </p>
-            <img src="images/Norm3.png" alt="Tabelle in der 3. Normalform">
-          </div>
+                            <p> 
+                            Die Bedingung der 1. Normalform lautet: "Alle Attribute sind atomar". <br>
+                            Atomar bedeutet, dass die Attribute nur einfache Attributwerte beinhalten. Also müssen beispielsweise Namen und 
+                            Adressen so weit wie möglich aufgespalten werden. Tun wir dies in der Beispieltabelle, so müssen wir beispielsweise
+                            Künstler und Album und die Titel voneinander trennen, da diese zusammengesetzte Attribute sind.
+                            Daraufhin entsteht folgende Tabelle:
+                            </p>
+                            <div class="image-container">
+                                <img src="images/Norm1.png" alt="Tabelle in der 1. Normalform">
+                            </div>
+
+                            <h4>Die 2. Normalform</h4>
+
+                            <p> 
+                            Die Bedingung der 2. Normalform lautet: "Befindet sich in der 1. Normalform und jedes Nicht-Schlüssel Attribut ist 
+                            vom Primärschlüssel voll funktional abhängig." <br>
+                            Haben wir einen Primärschlüssel, der aus mehreren Attributen besteht, wie hier aus der Album_ID und Titelnummer, muss
+                            die Tabelle gespalten werden, da bspw. der Künstler nicht von der Titelnummer, folglich nicht vom gesamten 
+                            Primärschlüssel abhängig ist.
+                            Machen wir entsprechende Änderungen, erhalten wir folgende Tabellen:
+                            </p>
+
+                            <div class="image-container">
+                                <img src="Norm2" alt="Tabelle in der 2. Normalform">
+                            </div>
+
+                            <h4>Die 3. Normalform</h4>
+
+                            <p> 
+                            Die Bedingung der 3. Normalform lautet: "Befindet sich in der 2. Normalform und kein 
+                            Nicht-Schlüsselattribut hängt von einem anderen Nicht-Schlüsselattribut ab." <br>               
+                            In unserer Tabelle haben wir z.B. jedoch keine Abhängigkeit zwischen dem Gründungsjahr eines Künstlers und der Album_ID.
+                            Ebenfalls ist der Künstler unabhängig von der Album_ID.
+                            Machen wir entsprechende Änderungen, erhalten wir folgende Tabellen:
+                            </p>
+                            <div class="image-container">
+                                <img src="images/Norm3.png" alt="Tabelle in der 3. Normalform">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-4">
+                <div class="col text-center">
+                    <a href="2.html" class="btn btn-primary">Zurück</a>
+                    <a href="4.html" class="btn btn-primary">Weiter</a>
+                    <a href="../index.html" class="btn btn-secondary">Zurück zur Übersicht</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="row m-4">
-      <div class="col text-center">
-        <a href="2.html" class="btn btn-primary">Zurück</a>
-        <a href="4.html" class="btn btn-primary">Weiter</a>
-        <a href="../index.html" class="btn btn-secondary">Zurück zur Übersicht</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Include Bootstrap JS and Popper.js (if needed) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+        <!-- Include Bootstrap JS and Popper.js (if needed) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
 </html>
