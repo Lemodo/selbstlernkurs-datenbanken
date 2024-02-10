@@ -54,6 +54,20 @@
                                 <p>Die Verantwortlichen müssen die Einhaltung der Datenschutzprinzipien nachweisen können.</p>
                             </ul>
 
+                            <hr>
+
+                            <p>
+                                Zur Verwendung von Datenbanken in Java werden vom Zentralabitur <code>DatabaseConnector</code> und <code>QueryResult</code> verwendet.
+                                Beim <code>DatabaseConnector</code> werden im Konstruktor IP-Adresse und Port der Datenbank sowie der Name der Datenbank und Benutzername und Password übergeben. <br>
+                                Daraufhin kann mithilfe von <code>executeStatement()</code> beliebige SQL-Anfragen an den Server gestellt. Deren Rückgabewerte werden durch die Methode <code>getCurrentQueryResult()</code> in Form eines Objekts der Klasse <code>QueryResult</code> zurückgegeben. <br>
+                                Die Methode <code>getErrorMessage()</code> gibt die Fehlernachricht aus, sollte eine entstehen. <br> Mit der Methode <code>close()</code> wird die Verbindung aufgehoben. <br>
+
+                                Die Klasse <code>QueryResult</code> verfügt über die Methode <code>getData()</code>, welche einen zweidimensionalen Array des Typen String zurückgibt, wobei der erste Index die Zeile, der zweite die Spalte repräsentiert. <br>
+                                Die <code>getRowCount()</code> und <code>getColumnCount()</code> Methoden geben die Anzahl der Spalten bzw. Zeilen zurück. <br>
+                                Mit <code>getColumnNames()</code> werden in Form eines String-Arrays die Bezeichner einer jeden Spalte übergeben. <br>
+                                Mit <code>getColumnTypes()</code> werden in Form eines String-Arrays die Typenbezeichnungen einer jeden Spalte übergeben. <br>
+                            </p>    
+
                         </div>
                     </div>
                 </div>
