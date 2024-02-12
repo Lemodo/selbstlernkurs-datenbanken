@@ -14,6 +14,7 @@
       <div class="col">
         <h1 class="display-3">Datenbanken Selbstlernkurs</h1>
         <a href="module" class="btn btn-secondary btn-lg mt-3">Start</a>
+        <div id="iframe-button"></div>
       </div>
     </div>
   </div>
@@ -26,5 +27,19 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // render iframe button if in an iframe
+    if (window.self === window.top) {
+        // This means the document is not inside an iframe
+        // Render the button and append it to the specified div
+        let div = document.getElementById('iframe-button');
+        let button = document.createElement('a');
+        button.href = 'https://datenbanken.leoboedeker.de';
+        button.className = 'btn btn-secondary btn-lg mt-3';
+        button.textContent = 'Seite außerhalb von Moodle öffnen';
+        button.target = '_blank';
+        div.appendChild(button);
+    }
+</script>
 </body>
 </html>
