@@ -29,7 +29,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
     // render iframe button if in an iframe
-    if (window.self === window.top) {
+    if (window.self !== window.top) {
         // This means the document is not inside an iframe
         // Render the button and append it to the specified div
         let div = document.getElementById('iframe-button');
